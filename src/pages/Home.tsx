@@ -3,13 +3,13 @@ import MovieCard from "../components/MovieCard"
 import "../css/Home.css"
 
 import { searchMovies, getPopularMovies } from "../services/api";
-import { useLocation } from "react-router-dom";
+
 
 
 
 function Home(){
    
-const location = useLocation();
+
  const [searchQuery, setSearchQuery] = useState("")
  const [movies, setMovies] = useState([])
  const [error, setError]:[error:any,setError:any] = useState(null)
